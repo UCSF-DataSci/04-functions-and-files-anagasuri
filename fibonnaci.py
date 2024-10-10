@@ -16,13 +16,13 @@ Task: Generate the Fibonacci numbers less than 100 and write them to `fibonacci_
 
 import argparse
 
-def fibonacci():
+def fibonacci(limit):
 	x = 0
 	y = 1
 
 	FibList = []
 
-	while x < 100:
+	while x < limit:
 		FibList.append(x)
 		
 		temp = x + y # computes fibonacci number, temp hold fibonnaci number 
@@ -49,4 +49,4 @@ if __name__ == "__main__":
 				f.write(f"{number}\n")
 		print(f"Fibonacci numbers saved to {args.output_file}.")
 
-# run this in terminal: python3 fibonnaci.py --output_file fibonacci_numbers.txt
+# run this in terminal: python3 fibonnaci.py --output_file fibonacci_numbers.txt 
